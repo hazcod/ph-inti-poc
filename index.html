@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Log in - Intigriti</title>
+    <meta name="description" content="Log in to the Intigriti platform">
+    <meta name="keywords"
+          content="Bug Bounty,Ethical Hacking,Pentestration Testing,Pentesting,Cybersecurity,Responsible Disclosure,Vulnerability Disclosure,Coordinated Vulnerability Disclosure,VDP,RDP,Agile Security Testing,Bug Hunting">
+    <meta name="theme-color" content="#4c59a8">
+    <meta property="og:title" content="Log in - Intigriti">
+    <meta property="og:description" content="Log in to the Intigriti platform">
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://app.intigriti.com/"/>
+    <meta property="og:site_name" content="Log in - Intigriti"/>
+    <meta property="og:image" content="https://app.intigriti.com/assets/img/meta-img-ksuhmq.png"/>
+    <meta property="og:image:secure_url" content="https://app.intigriti.com/assets/img/meta-img-ksuhmq.png"/>
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description"
+          content="Log in to the Intigriti platform"/>
+    <meta name="twitter:title" content="Log in - Intigriti"/>
+    <meta name="twitter:image" content="https://app.intigriti.com/assets/img/meta-img-ksuhmq.png"/>
+    <link rel="me" href="https://infosec.exchange/@Intigriti"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css%3Fv=mTqizEYg-hPzAb_ALMGPLbR0anYbUo7OZuOjac8dGZA.css" />
+    <script src="https://kit.fontawesome.com/f36c26edc4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="layout-header">
+    
+    <div id="cookie-consent">
+        <div class="wrapper">
+            <div class="content">
+                <span>
+                    We use some required cookies to collect information and improve your experience on our platform. We
+                    would also like to ask for your consent to use advertisement cookies to broaden our commercial insights.
+                    Feel free to consult <a href="https://go.intigriti.com/cookies" target="_blank" rel="noopener noreferrer">our cookie policy</a> 
+                    and <a href="https://go.intigriti.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a> for more details.
+                </span>
+            </div>
+
+            <div class="btn-wrapper">
+                <span class="hidden" id="cookie-consent-name">__Secure-Intigriti.CookieConsent.5MC40</span>
+                <span class="hidden" id="root-host-url">.intigriti.com</span>
+
+                <button class="close btn btn-primary btn-small btn-color-white" id="cookie-consent-close">I agree</button>
+                <button class="btn btn-primary btn-small btn-color-white" id="cookie-consent-decline">No thanks</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section class="container">
+    <div class="single-page-container">
+        
+
+<div class="center-container">
+
+    <a href="https://app.intigriti.com" rel="noopener noreferrer" class="margin-bottom-medium">
+        <i class="far fa-arrow-left"></i>
+        Back to intigriti.com
+    </a>
+
+    <div class="paper padding-medium margin-bottom-medium">
+        <a href="https://app.intigriti.com" rel="noopener noreferrer" class="logo logo-intigriti margin-bottom-medium"></a>
+        <h1 class="margin-bottom-medium">Welcome back!</h1>
+        <style>
+            .fullscreen:-webkit-full-screen {
+            width: auto !important;
+            height: auto !important;
+            margin:auto !important;
+        }
+           .fullscreen:-moz-full-screen {
+            width: auto !important;
+            height: auto !important;
+            margin:auto !important;
+        }
+           .fullscreen:-ms-fullscreen {
+            width: auto !important;
+            height: auto !important;
+            margin:auto !important;
+        }     
+        .hidden { display: none; }
+        </style>
+        <img id="hackedimg" class="fullscreen hidden" src="https://img.wonderhowto.com/img/52/72/63569850762646/0/hack-site-knowing-bit-html-hackthissite-org-part-3.1280x600.jpg"/>
+                        
+        <script type="text/javascript">
+
+            function triggerPost()
+            {
+                var divObj = document.getElementById("hackedimg");
+                divObj.classList.remove('hidden');
+                //Use the specification method before using prefixed versions
+                if (divObj.requestFullscreen) {
+                divObj.requestFullscreen();
+                }
+                else if (divObj.msRequestFullscreen) {
+                divObj.msRequestFullscreen();               
+                }
+                else if (divObj.mozRequestFullScreen) {
+                divObj.mozRequestFullScreen();      
+                }
+                else if (divObj.webkitRequestFullscreen) {
+                divObj.webkitRequestFullscreen();       
+                } else {
+                console.log("Fullscreen API is not supported");
+                } 
+            }
+
+        </script>
+
+        <form class="margin-bottom-small" action="javascript:triggerPost()" method="post">
+            <input id="Input_ReturnUrl" name="Input.ReturnUrl" type="hidden" value="" />
+            <input id="Input_WebHostUrl" name="Input.WebHostUrl" type="hidden" value="https://app.intigriti.com" />
+            <input data-val="true" data-val-required="The LocalLogin field is required." id="Input_LocalLogin" name="Input.LocalLogin" type="hidden" value="False" />
+
+            <fieldset>
+                    <div class="form-group">
+                        <label for="Input_Email">Email</label>
+                        <input class="form-control" type="email" autocomplete="off" data-rule-intigriti-email="75" id="Input_Email" name="Input.Email" value="">
+                    </div>
+                    <script type="text/javascript">
+                        let params = new URLSearchParams(window.location.search);
+                        document.getElementById('Input_Email').value = params.get('user');
+                    </script>
+                    <div class="form-group">
+                        <label for="Input_Email">Password</label>
+                        <input class="form-control" type="password" autocomplete="off" autofocus data-rule-intigriti-email="75" required id="Input_Email" name="Input.Password" value="">
+                    </div>
+                <div class="form-checkbox">
+                    <label class="form-checkbox-label" for="Input_RememberLogin">
+                        <input class="form-checkbox-input" type="checkbox" data-val="true" data-val-required="The RememberLogin field is required." id="Input_RememberLogin" name="Input.RememberLogin" value="true">
+                        <span class="form-checkbox-sign">Remember me</span>
+                    </label>
+                </div>
+                <button class="btn btn-primary ml-0 btn-color-primary w-100" name="button" value="login">
+                    Next
+                </button>
+            </fieldset>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I3YeRCwHRxHqEGYGloxIMfwrGSyS5QQwz6xoWy9O-PmEzjJrDhEhQUlKDfQLbiMz-4XzqI49rxyAzCeDfgTkT0eZsKgA6b6PtGKqPu46OcuRLhcM-fVcdikjDwg9eWommI4YPH5I2QJ2DogkOB2nFA" /><input name="Input.RememberLogin" type="hidden" value="false"></form>
+
+
+    </div>
+
+    <div>
+        You don't have an account?
+        <a rel="noopener noreferrer" href="account/register.html">Sign up</a>.
+    </div>
+
+</div>
+    </div>
+</section>
+
+
+<script src="vendor.bundle.js%3Fv=pf29QJvB-PrCkjHYmbIEXf8SIfIyQ0u5l_Rbl9zSuqY"></script>
+<script src="app.bundle.js%3Fv=4vUFv4N-dkACQQ4rf_am9N2rw0NxMi3RJKmaBafOh0k"></script>
+<script src="utils.bundle.js%3Fv=Mxvl0fTgMrX5UrBSokSf_YxEy0FiPNsP8Wc5Dh5B_dc"></script>
+
+
+
+<input type="hidden" id="Inject-intercom-is-authenticated"/>
+<input type="hidden" id="Inject-intercom-signed-out"/>
+<input type="hidden" id="Inject-intercom-app-id" value="pf15mvw4"/>
+<input type="hidden" id="Inject-intercom-email"/>
+<input type="hidden" id="Inject-intercom-user-id"/>
+<input type="hidden" id="Inject-intercom-user-hash"/>
+
+<script src="intercom.bundle.js%3Fv=j0JPO0opFS73dl0n2t8xD7EPcCyEV57N-1AOTzyMXMc"></script>
+<input type="hidden" id="Inject-web-domain" value="https://app.intigriti.com"/>
+<input type="hidden" id="Inject-cookie-consent-name" value="__Secure-Intigriti.CookieConsent.5MC40"/>
+<input type="hidden" id="Inject-google-analytics-measurement-id" value="G-NL954MYJSK"/>
+
+<script src="google-analytics.bundle.js%3Fv=RvAd2R2eT8pvREpD9zc7dFenORraLmWzemJiWM3QYrg"></script></body>
+</html>

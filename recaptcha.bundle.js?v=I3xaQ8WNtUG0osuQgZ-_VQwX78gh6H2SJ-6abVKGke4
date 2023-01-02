@@ -1,0 +1,1 @@
+grecaptcha.ready((function(){var e=$("#Inject-recaptcha-site-key").val(),t=grecaptcha.render("captcha-container",{sitekey:e,badge:"bottomleft",size:"invisible"});!function e(){grecaptcha.execute(t,{action:"identity_action"}).then((function(e){$("#Inject-recaptcha-token").val(e)})),setTimeout(e,9e4)}()}));
